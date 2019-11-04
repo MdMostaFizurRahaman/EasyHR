@@ -2,9 +2,12 @@ require('./bootstrap');
 window.Vue = require('vue');
 import router from './route';
 import Breadcrumb from './views/Breadcrumb.vue';
+import { Form, HasError, AlertError } from 'vform';
 
 // Vue.component('example-component', require('./views/ExampleComponent.vue').default);
-
+window.Form = Form;
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
 
 
 
